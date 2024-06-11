@@ -1,3 +1,55 @@
+# F1 WorldCup Astro
+### Dependency
+1.- Install [Tailwind and flowbite](https://flowbite.com/docs/getting-started/astro/)
+```
+npx astro add tailwind
+npm install flowbite
+```
+* Config tailwind.config.mjs file
+```
+/** @type {import('tailwindcss').Config} */
+export default {
+	content: [
+		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+		'./node_modules/flowbite/**/*.js'
+	],
+	theme: {
+		extend: {},
+	},
+	plugins: [
+		require('flowbite/plugin'),
+	],
+}
+```
+### Somge Git Commands
+```
+  // -m is Main, -u is branch
+  git commit <-m>, <-u> 
+  // change branch
+  git checkout <main>, <sas>
+```
+* Fixin Main
+```
+git log // search commit id
+git checkout <id> // checkout to id commit
+git switch -c temporal // copy to temp branch
+git branch -f main // force main to use this commit branch
+git switch main // return to main
+git branch -d temporal // delete temp branch
+```
+```
+git clean -dfx
+git checkout main
+git reset --hard godbranch
+git reset --soft ORIG_HEAD
+git add -fA .
+git commit -m "Rewrite main with godbranch"
+git merge -s ours godbranch
+```
+
+<hr>
+<hr>
+
 # Astro Starter Kit: Basics
 
 ```sh
