@@ -17,5 +17,8 @@
     "scrollmagic": "^2.0.8",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/scrollmagic": "^2.0.8"
   }
 }

@@ -24,6 +24,7 @@ export default {
 2.- [Scrollmagic](https://scrollmagic.io/)
 ```
 npm install scrollmagic
+npm install --save-dev @types/scrollmagic
 ```
 ### Somge Git Commands
 ```
