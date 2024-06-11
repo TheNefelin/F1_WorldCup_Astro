@@ -1,0 +1,49 @@
+<!-- TOP NAVBAR -->
+<nav class="bg-gray-900">
+  <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-3">
+    <a href="/" data-astro-reload class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="/img/logo.webp" class="h-10" alt="F1 Logo" />
+      <span class="titulo text-white self-center font-semibold whitespace-nowrap">F1 World Cup</span>
+    </a>
+    <div class="flex items-center space-x-6 rtl:space-x-reverse">
+      <a href="tel:5541251234" class="text-sm  text-gray-400 hover:underline">(555) 412-1234</a>
+      <a href="#" class="text-sm text-blue-500 hover:underline">Login</a>
+    </div>
+  </div>
+</nav>
+
+<!-- BOTTOM NAVBAR -->
+<nav class="bg-red-600">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+    <!-- DROPDOWN -->
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm  rounded-lg md:hidden hover:bg-red-700 focus:outline-none focus:ring-2 ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+    </div>
+    <!-- ENLANCES -->
+    <div class="m-auto items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="titulo flex flex-col p-4 md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+        <li>
+          <a href="/carreras" class="btn transition ease-in-out duration-300">Carreras</a>
+        </li>
+        <li>
+          <a href="/participantes" class="btn transition ease-in-out duration-300">Participantes</a>
+        </li>
+        <li>
+          <a href="/teams" class="btn transition ease-in-out duration-300">Teams</a>
+        </li>
+        <li>
+          <a href="/retiro" class="btn transition ease-in-out duration-300">Retiro</a>
+        </li>
+        <li>
+          <a href="/puntos" class="btn transition ease-in-out duration-300">clasificación</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+

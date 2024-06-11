@@ -21,6 +21,10 @@ export default {
 	],
 }
 ```
+2.- [Scrollmagic](https://scrollmagic.io/)
+```
+npm install scrollmagic
+```
 ### Somge Git Commands
 ```
   // -m is Main, -u is branch

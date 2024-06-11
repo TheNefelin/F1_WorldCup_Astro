@@ -1,4 +1,6 @@
 ---
+import NavBar from '../components/NavBar.astro';
+
 interface Props {
 	title: string;
 }
@@ -17,10 +19,54 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+    <NavBar/>
+
 		<slot />
 	</body>
 </html>
 
 <style is:global>
+@font-face {
+    font-family: 'ethnocentric';
+    src: url('/fonts/ethnocentric rg.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 
+  @font-face {
+    font-family: 'robto-thin';
+    src: url('/fonts/Roboto-Thin.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'robto-medium';
+    src: url('/fonts/Roboto-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .titulo {
+    font-family: 'ethnocentric';
+  
+  }
+  .roboto-thin {
+    font-family: 'robto-thin';
+  } 
+
+  .roboto-medium {
+    font-family: 'robto-medium';
+  }
+
+  .main {
+    
+  }
+
+  .btn {
+    @apply rounded-full px-4 py-2 text-base text-white shadow-sm hover:bg-white hover:text-slate-800;
+  }
 </style>
