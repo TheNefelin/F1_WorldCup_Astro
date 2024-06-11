@@ -25,7 +25,9 @@ const { title } = Astro.props;
 	<body>
     <NavBar/>
 
-		<slot />
+    <main class="bg-gradient-to-r from-slate-800 to-slate-900/80">
+      <slot />
+    </main>
 	</body>
 </html>
 
